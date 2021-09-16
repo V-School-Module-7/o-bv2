@@ -24,54 +24,56 @@ function Reserve(props) {
 
   return (
     <Container>
-      <div
-        style={{
-          width: '80%',
-          display: 'grid',
-          gridTemplateColumns: '3fr 2fr',
-        }}
-      >
-        <Column>
-          <Text as="h1" color="#E57879" fontSize="3rem" letterSpacing="0.5rem">
+      <Column>
+        <span>
+          <Text as="h1" color="#E57879" fontSize={3} letterSpacing="0.5rem">
             SCHEDULE A FLIGHT
           </Text>
           <Img src={planeImg} />
-          <Text as="h1">PIPER ARROW II</Text>
-        </Column>
-        <Column>
+          <Text as="h1" fontSize={2}>
+            PIPER ARROW II
+          </Text>
+        </span>
+      </Column>
+      <Column>
+        <span style={{ width: '100%' }}>
           <Card>
             <Text
               as="h1"
               color="#E57879"
               //   textAlign="justify"
               letterSpacing="0.25rem"
-              fontSize="2.5rem"
+              fontSize={2}
             >
               PICK DATE & TIME
             </Text>
             <span>
-              <Text as="h4" color="#929292">
+              <Text as="h4" color="#929292" fontSize={1}>
                 START
               </Text>
               <DateTimePicker onChange={setStart} value={start} />
             </span>
             <span>
-              <Text as="h4" color="#929292">
+              <Text as="h4" color="#929292" fontSize={1}>
                 END
               </Text>
               <DateTimePicker onChange={setEnd} value={end} />
             </span>
-            <Text as="h2">RESERVATION FEE - $10.00*</Text>
-            <Text as="h1" color="#E57879">
+            <Text as="h2" fontSize={1.5}>
+              RESERVATION FEE - $10.00*
+            </Text>
+            <Text as="h1" color="#E57879" fontSize={2}>
               $175 PER HOUR
             </Text>
             <Button bgColor="#E57879" color="white" onClick={handleClick}>
               RESERVE FLIGHT
             </Button>
           </Card>
-          <Text as="h3">*RESERVATION FEE DUE AT CHECKOUT</Text>
-        </Column>
-      </div>
+          <Text as="h3" fontSize={1.1}>
+            *RESERVATION FEE DUE AT CHECKOUT
+          </Text>
+        </span>
+      </Column>
     </Container>
   );
 }
