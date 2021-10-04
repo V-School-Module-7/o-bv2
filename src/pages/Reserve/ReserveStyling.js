@@ -8,7 +8,7 @@ export const Container = styled.div`
   display: grid;
   place-items: center;
   background: linear-gradient(131.19deg, #f5f5f5 55.83%, #a5bac7 103.21%);
-  padding: 5vw;
+  padding: 0 5vw;
   @media (min-width: 480px) {
   }
   @media (min-width: 768px) {
@@ -85,10 +85,10 @@ export const Card = styled.div`
   height: 100%;
   box-shadow: 0px 21px 35px rgba(165, 186, 199, 0.5);
   display: flex;
+  gap: 0.4rem;
   flex-direction: column;
   justify-content: space-between;
   width: 90vw;
-  min-height: 500px;
   @media (min-width: 480px) {
   }
   @media (min-width: 768px) {

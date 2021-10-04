@@ -26,7 +26,7 @@ function Reserve(props) {
     <Container>
       <Column>
         <span>
-          <Text as="h1" color="#E57879" fontSize={3} letterSpacing="0.5rem">
+          <Text as="h1" color="#E57879" fontSize={2.75} letterSpacing="0.8vw">
             SCHEDULE A FLIGHT
           </Text>
           <Img src={planeImg} />

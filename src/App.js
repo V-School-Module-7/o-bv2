@@ -38,6 +38,7 @@ function App() {
 
   return (
     <Container>
+      {/* <Auth /> */}
       {/* <Booking signOut={signOut} /> */}
       <Reserve />
       {/* <span>
