@@ -1,14 +1,23 @@
 # O-D
 
-This project was created using React and Firebase.
+A plane booking/reservation app.
 
 ## The Team
 
 ### Project Owner
 
 ### Project Manager
- - Daniel Ruales
+
+- Laney Kawaguchi
+- Daniel Ruales
 
 ### Developers
- - Alex Ramirez
- - Garrett Smith
+
+- Ren Gian
+- Garrett Smith
+
+## The Tech
+
+- React
+- Firebase
+- Styled-Components
