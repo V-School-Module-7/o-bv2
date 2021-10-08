@@ -1,7 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { Route, Switch, Redirect } from "react-router-dom";
 import './App.css';
 import Auth from './pages/Auth/Auth';
 import Booking from './pages/Booking/Booking';
+import Checkout from './pages/Checkout/Checkout'
 import styled from 'styled-components';
 import { UserContext } from './context/UserProvider';
 import firebase from 'firebase/app';
@@ -38,10 +40,12 @@ function App() {
 
   return (
     <Container>
-      {/* <Auth /> */}
-      {/* <Booking signOut={signOut} /> */}
-      <Reserve />
-      {/* <span>
+      <Switch>
+        <Route path="/checkout" component={Checkout} redirectTo="/"></Route>
+        {/* <Auth /> */}
+        {/* <Booking signOut={signOut} /> */}
+        <Reserve />
+        {/* <span>
                     <h2>You are logged in as</h2>
                     <h1 style={{ color: "#ccc" }}>{user?.email}!</h1>
                     <button
@@ -59,6 +63,7 @@ function App() {
                         Sign Out
                     </button>
                 </span> */}
+      </Switch>
     </Container>
   );
 }

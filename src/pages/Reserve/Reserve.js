@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom"
+
 import {
   Container,
   Column,
@@ -65,9 +67,11 @@ function Reserve(props) {
             <Text as="h1" color="#E57879" fontSize={2}>
               $175 PER HOUR
             </Text>
+            <Link to="/checkout">
             <Button bgColor="#E57879" color="white" onClick={handleClick}>
               RESERVE FLIGHT
             </Button>
+            </Link>
           </Card>
           <Text as="h3" fontSize={1.1}>
             *RESERVATION FEE DUE AT CHECKOUT
