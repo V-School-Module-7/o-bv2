@@ -4,3 +4,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.checkoutSpan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.checkout {
+    margin-right: 350px;
+}

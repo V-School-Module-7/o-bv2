@@ -19,21 +19,20 @@ firebase.initializeApp({
   measurementId: "G-Z2JF6ZGXN5"
 })
 
-  // (async () => {
-  //   const { publishableKey } = await fetch('/config').then(r => r.json())
-   const stripePromise = loadStripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh')
+  
+   const stripePromise = loadStripe("pk_test_51JleqCBQwcyFZrujsl24hf5gARibTD1ek6DZwZcnenUNpEF2b1mKifsWFy22BHDoJaRA8FtidLx20KvsLIieynO4007pOGyCMipk_test_51JleqCBQwcyFZrujsl24hf5gARibTD1ek6DZwZcnenUNpEF2b1mKifsWFy22BHDoJaRA8FtidLx20KvsLIieynO4007pOGyCMi")
 
     ReactDOM.render(
       <BrowserRouter>
+      <Elements stripe={stripePromise}>
         <UserProvider>
-          <Elements stripe={stripePromise}>
             <App />
-          </Elements>
         </UserProvider>
+        </Elements>
       </BrowserRouter>,
       document.getElementById('root')
     );
-  // })()
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
