@@ -1,8 +1,8 @@
-# O-D
+# O-D ✈
 
 A plane booking/reservation app.
 
-## The Team
+## 💪 The Team
 
 ### Project Owner
 
@@ -16,7 +16,7 @@ A plane booking/reservation app.
 - Ren Gian
 - Garrett Smith
 
-## The Tech
+## 💻 The Tech
 
 - React
 - Firebase
