@@ -7,6 +7,7 @@ import { UserContext } from './context/UserProvider';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import Reserve from './pages/Reserve/Reserve';
+import Landing from './pages/Landing/Landing';
 
 const Container = styled.div`
   width: 100vw;
@@ -40,7 +41,8 @@ function App() {
     <Container>
       {/* <Auth /> */}
       {/* <Booking signOut={signOut} /> */}
-      <Reserve />
+      {/* <Reserve /> */}
+      <Landing />
       {/* <span>
                     <h2>You are logged in as</h2>
                     <h1 style={{ color: "#ccc" }}>{user?.email}!</h1>
