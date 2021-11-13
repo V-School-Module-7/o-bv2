@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Auth from './pages/Auth/Auth';
 import Booking from './pages/Booking/Booking';
@@ -39,28 +40,13 @@ function App() {
 
   return (
     <Container>
-      {/* <Auth /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/reserve" element={<Reserve />} />
+        </Routes>
+      </BrowserRouter>
       {/* <Booking signOut={signOut} /> */}
-      {/* <Reserve /> */}
-      <Landing />
-      {/* <span>
-                    <h2>You are logged in as</h2>
-                    <h1 style={{ color: "#ccc" }}>{user?.email}!</h1>
-                    <button
-                        onClick={signOut}
-                        style={{
-                            padding: "0.5rem",
-                            fontWeight: "bold",
-                            background: "indianred",
-                            border: "none",
-                            borderRadius: "100px",
-                            color: "whitesmoke",
-                            marginTop: 10,
-                        }}
-                    >
-                        Sign Out
-                    </button>
-                </span> */}
     </Container>
   );
 }
