@@ -5,7 +5,7 @@ export const Container = styled.div`
   height: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  display: grid;
+  display: flex;
   place-items: center;
   background: linear-gradient(131.19deg, #f5f5f5 55.83%, #a5bac7 103.21%);
   padding: 0 5vw;
@@ -24,7 +24,7 @@ export const Container = styled.div`
 
 export const Column = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-diretion: column;
   place-items: center;
   width: 100%;
   @media (min-width: 480px) {
@@ -82,7 +82,8 @@ export const Img = styled.img`
 export const Card = styled.div`
   background-color: white;
   padding: 0.5rem 1.5rem;
-  height: 100%;
+  margin: 10px;
+  height: 40%;
   box-shadow: 0px 21px 35px rgba(165, 186, 199, 0.5);
   display: flex;
   gap: 0.4rem;
