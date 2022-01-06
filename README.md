@@ -15,6 +15,7 @@ A plane booking/reservation app.
 
 - Ren Gian
 - Garrett Smith
+- Carlos Zapien
 
 ## 💻 The Tech
 
