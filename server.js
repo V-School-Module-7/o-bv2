@@ -15,7 +15,7 @@ app.post("/payment", cors(), async (req, res) => {
   try {
     const payment = await stripe.paymentIntents.create({
       amount,
-      currency,
+      currency: 'usd',
       description: 'Reservation Fee',
       billing_details,
       payment_method: id,
